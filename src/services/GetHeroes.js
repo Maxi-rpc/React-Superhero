@@ -2,15 +2,17 @@ import axios from "axios";
 import { API } from "./Api";
 
 export default function GetHeroes() {
-	let heroe = "soy heroe";
-	axios
-		.get(API + 1)
-		.then((res) => {
-			heroe = res.data;
-		})
-		.catch((error) => {
-			heroe = error;
-		});
+	const heroe = {
+		id: "",
+		name: "",
+		image: "",
+	};
+	axios.get(API + 1).then((res) => {
+		let hero = res.data;
+		heroe.id = hero.id;
+		heroe.name = hero.name;
+		heroe.image = hero.image.url;
+	});
 
 	return heroe;
 }
