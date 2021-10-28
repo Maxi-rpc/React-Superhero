@@ -9,15 +9,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="container-fluid">
-				<Template>
-					<Switch>
-						<Route exact path="/login" component={Login}></Route>
-						<Route exact path="/" component={Home}></Route>
-						<Route exact path="/Search" component={Search}></Route>
-					</Switch>
-				</Template>
-			</div>
+			<Template>
+				<Switch>
+					<Route exact path="/login" component={Login}></Route>
+					<Route exact path="/" component={Home}></Route>
+					<Route exact path="/Search" component={Search}></Route>
+				</Switch>
+			</Template>
 		</BrowserRouter>
 	);
 }
