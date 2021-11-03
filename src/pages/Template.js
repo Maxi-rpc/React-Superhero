@@ -6,7 +6,7 @@ export default function Template(props) {
 	return (
 		<>
 			<Navbar></Navbar>
-			<div className="container-fluid">{content}</div>
+			<div className="container-fluid bg-primary">{content}</div>
 			<Footer></Footer>
 		</>
 	);

@@ -4,8 +4,8 @@ import { Version, GithubRep, Linkedin, Github } from "../../services/Config";
 export default function Footer() {
 	return (
 		<>
-			<div className="fixed-bottom bg-dark text-white px-2">
-				<div className="row m-2">
+			<footer className="container-fluid bg-dark text-white fixed-bottom">
+				<div className="row mx-0 pt-2">
 					<div className="col">
 						<ul className="social">
 							<li className="social-icon">
@@ -31,7 +31,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</>
 	);
 }

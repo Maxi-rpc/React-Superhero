@@ -4,11 +4,11 @@ import FormLogin from "../../components/form/Login.js";
 export default function Login() {
 	return (
 		<>
-			<div className="row justify-content-md-center bg-primary">
-				<div className="col-md-4 align-self-center">
+			<div className="row py-5 justify-content-md-center align-items-center">
+				<div className="col-md-4">
 					<FormLogin></FormLogin>
 				</div>
-				<div className="col-md-4 align-self-center">
+				<div className="col-md-4">
 					<Banner></Banner>
 				</div>
 			</div>
