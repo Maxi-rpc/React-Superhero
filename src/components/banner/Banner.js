@@ -1,10 +1,10 @@
-import { GetHeroDefault } from "../../services/getHero";
+import React, { useState } from "react";
 
-export default function Banner() {
-	const heroe = GetHeroDefault();
+export default function Banner({ image, width, height }) {
+	const { state, setState } = useState([]);
 	return (
 		<>
-			<img src={heroe.image.url} alt="" className="img-fluid" />
+			<img src={image} alt="" width={width} height={height} />
 		</>
 	);
 }
