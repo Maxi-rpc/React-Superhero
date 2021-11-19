@@ -1,12 +1,9 @@
-import GetHeroes from "../../services/GetHeroes";
+import { Title } from "../../components/title/Title";
 
 export default function Home() {
-  const heroes = GetHeroes();
-  console.log(heroes);
-
   return (
     <>
-      <h1>Home</h1>
+      <Title titulo="Home"></Title>
     </>
   );
 }
