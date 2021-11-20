@@ -13,7 +13,7 @@ function App() {
 				<Template>
 					<Route exact path="/login" component={Login}></Route>
 					<Route exact path="/" component={Home}></Route>
-					<Route exact path="/Search" component={Search}></Route>
+					<Route exact path="/search" component={Search}></Route>
 				</Template>
 			</Switch>
 		</BrowserRouter>

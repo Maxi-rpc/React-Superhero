@@ -28,8 +28,8 @@ export default function Navbar() {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to="/team">
-									Mi Team
+								<Link className="nav-link" to="/search">
+									Buscar
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -38,17 +38,6 @@ export default function Navbar() {
 								</Link>
 							</li>
 						</ul>
-						<form className="d-flex">
-							<input
-								className="form-control me-2"
-								type="search"
-								placeholder="Buscar"
-								aria-label="Search"
-							/>
-							<button className="btn btn-outline-info" type="submit">
-								Buscar
-							</button>
-						</form>
 					</div>
 				</div>
 			</nav>
