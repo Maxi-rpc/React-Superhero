@@ -1,6 +1,9 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { GetHero } from "../../services/GetHero";
 
 export const SearchBar = () => {
+	let resultado = {};
+
 	return (
 		<>
 			<Formik
@@ -15,6 +18,7 @@ export const SearchBar = () => {
 				}}
 				onSubmit={(valores, { resetForm }) => {
 					resetForm();
+					resultado = GetHero(valores.search);
 					console.log(valores);
 					console.log("form submit");
 				}}
@@ -35,6 +39,7 @@ export const SearchBar = () => {
 					</Form>
 				)}
 			</Formik>
+			<div className="alert">{console.log(resultado)}</div>
 		</>
 	);
 };
